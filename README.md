@@ -3,7 +3,7 @@ gamerware v2.5 latest source release,
 im done with this shit pasted hack 
 
 credits/shoutouts: 
-stickrpg for stickrpg v1 (base) |
+stickrpg for stickrpghook v1 (base) |
 rabbit/e0v (code help) |
 all my testers in gamerware discord (for testing)
 
