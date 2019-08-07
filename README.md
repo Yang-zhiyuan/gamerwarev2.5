@@ -7,4 +7,6 @@ stickrpg for stickrpg v1 (base) |
 rabbit/e0v (code help) |
 all my testers in gamerware discord (for testing)
 
+menu is made using zgui: https://github.com/zxvnme/zgui
+
 menu screenshots: https://imgur.com/a/rDr7iQ0
