@@ -5,7 +5,7 @@ im done with this shit pasted hack
 credits/shoutouts: 
 stickrpg for stickrpghook v1 (base) |
 rabbit/e0v (code help) |
-all my testers in gamerware discord (for testing)
+all my users in gamerware discord (testing)
 
 menu is made using zgui: https://github.com/zxvnme/zgui
 
