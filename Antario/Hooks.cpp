@@ -617,6 +617,17 @@ void update_state(C_AnimState* state, Vector ang) {
 	ret(state, NULL, NULL, ang.y, ang.x, NULL);
 }
 
+template<class T, class U>
+static T clamp(T in, U low, U high) {
+	if (in <= low)
+		return low;
+
+	if (in >= high)
+		return high;
+
+	return in;
+}
+
 void __fastcall Hooks::DrawModelExecute(void* ecx, void* edx, IMatRenderContext* context, const DrawModelState_t& state, const ModelRenderInfo_t& info, matrix3x4_t* matrix)
 {
 	static auto oDrawModelExecute = g_Hooks.pModelHook->GetOriginal<DrawModelExecute_t>(vtable_indexes::dme);
