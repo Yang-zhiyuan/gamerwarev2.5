@@ -475,6 +475,12 @@ public:
         static int m_flDuckSpeed = g_pNetvars->GetOffset("DT_BasePlayer", "m_flDuckSpeed");
         return GetValue<float>(m_flDuckSpeed);
     }
+    
+    	float m_flDuckAmount()
+    {
+        static int m_flDuckAmount = g_pNetvars->GetOffset("DT_BasePlayer", "m_flDuckAmount");
+        return GetValue<float>(m_flDuckAmount);
+    }
 
 	bool IsKnifeorNade();
 
