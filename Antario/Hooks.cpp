@@ -650,6 +650,18 @@ void __fastcall Hooks::DrawModelExecute(void* ecx, void* edx, IMatRenderContext*
 		g_Chams.BacktrackChams(ecx, edx, context, state, info, matrix);
 		g::pLocalEntity->SetAbsAngles(Vector(0, g::FakeAngle.y, 0));
 	}
+		if (g::pLocalEntity->IsAlive()) {
+		if (pPlayerEntity && pPlayerEntity->IsAlive() && !pPlayerEntity->IsDormant() && g_Aimbot.Matrix[info.index] && strstr(ModelName, "models/player") && pPlayerEntity == g::pLocalEntity && g::pLocalEntity->IsAlive()) {
+			matrix3x4_t BoneToWorld[MAXSTUDIOBONES];
+			if (g_Menu.Config.FakeDuck && GetAsyncKeyState(g_Menu.Config.FakeduckKey)) {
+				 
+				float max_duck_height = g_pMovement->GetPlayerViewOffset(true).z;
+				float max_stand_height = g_pMovement->GetPlayerViewOffset(false).z;
+
+				matrix[8].SetOrigin(Vector(matrix[8].GetOrigin().x, matrix[8].GetOrigin().y, g::pLocalEntity->GetOrigin().z + clamp((1.0f - g::pLocalEntity->m_flDuckAmount()) * max_stand_height, max_duck_height, max_stand_height)));
+			}
+		}
+	}
 }
 
 void DrawBeam(Vector src, Vector end, Color color, float life)
