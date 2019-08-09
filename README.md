@@ -10,3 +10,5 @@ all my users in gamerware discord (testing)
 menu is made using zgui: https://github.com/zxvnme/zgui
 
 menu screenshots: https://imgur.com/a/rDr7iQ0
+
+there is a very small anti-paste and if u cant figure it out ur pretty retarded tbh
